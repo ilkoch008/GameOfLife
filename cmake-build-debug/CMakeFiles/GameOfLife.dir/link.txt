@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -Wl,-Bsymbolic-functions CMakeFiles/GameOfLife.dir/main.c.o CMakeFiles/GameOfLife.dir/misc.c.o CMakeFiles/GameOfLife.dir/singleProcess.c.o CMakeFiles/GameOfLife.dir/multi_process.c.o  -o GameOfLife  /usr/lib/x86_64-linux-gnu/libmpich.so -lglut -lGLU -lGL 
