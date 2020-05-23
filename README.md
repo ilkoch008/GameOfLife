@@ -11,5 +11,5 @@ Conway's Game of Life
 
 Number of processes and resolution must satisfy the following condition:
 ```
-resolution % (numOfProcs - 1) != 0
+resolution % (numOfProcs - 1) == 0
 ```
