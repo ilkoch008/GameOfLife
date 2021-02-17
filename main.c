@@ -9,10 +9,6 @@ int main(int argc, char *argv[]){
     signal(SIGINT, quit);
     MPI_Init(&argc, &argv);
     resolution = 512;
-    halfRes = resolution/2;
-    resolution_1 = 1/resolution;
-    res = (int) resolution;
-    hRes = (int) halfRes;
     multiProc = 0;
     visual = 0;
 
@@ -21,8 +17,15 @@ int main(int argc, char *argv[]){
             multiProc = 1;
         } else if(strstr(argv[i], "-v") != NULL){
             visual = 1;
+        } else if(strstr(argv[i], "-r") != NULL){
+            resolution = atoi(argv[i+1]);
         }
     }
+
+    halfRes = resolution/2;
+    resolution_1 = 1/resolution;
+    res = (int) resolution;
+    hRes = (int) halfRes;
 
     int numOfProcs, myRank, namelen, size;
     MPI_Status status;

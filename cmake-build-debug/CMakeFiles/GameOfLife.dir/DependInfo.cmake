@@ -13,6 +13,10 @@ set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi"
+  "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent"
+  "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include"
+  "/usr/lib/x86_64-linux-gnu/openmpi/include"
   "/usr/include/mpich"
   )
 
